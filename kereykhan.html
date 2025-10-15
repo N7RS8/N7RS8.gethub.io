@@ -1,130 +1,139 @@
 <!DOCTYPE html>
 <html lang="kk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Әке Хан - Өмірбаяны</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 5px;
-        }
-        h1, h2 {
-            color: #2c3e50;
-            text-align: center;
-        }
-        h1 {
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .photo-placeholder {
-            width: 200px;
-            height: 250px;
-            background-color: #ecf0f1;
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #bdc3c7;
-            border-radius: 5px;
-        }
-        .timeline {
-            margin-left: 20px;
-        }
-        .timeline-item {
-            margin-bottom: 15px;
-            position: relative;
-            padding-left: 20px;
-        }
-        .timeline-item:before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #3498db;
-            font-size: 20px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #ecf0f1;
-            color: #7f8c8d;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Керей хан — өмірбаяны</title>
+  <style>
+    :root{
+      --bg:#fffceb;
+      --card:#fff;
+      --accent:#f6c84c;
+      --text:#1b1b1b;
+      --muted:#555;
+      --radius:14px;
+      --pad:20px;
+      --maxw:900px;
+    }
+    body{
+      background: linear-gradient(180deg, var(--bg), #fff);
+      color:var(--text);
+      font-family: Inter, "Helvetica Neue", Arial, sans-serif;
+      margin:0;
+      padding:40px 16px;
+      display:flex;
+      justify-content:center;
+      -webkit-font-smoothing:antialiased;
+    }
+    .wrap{
+      width:100%;
+      max-width:var(--maxw);
+    }
+    header{
+      display:flex;
+      gap:16px;
+      align-items:center;
+      margin-bottom:18px;
+    }
+    .logo{
+      width:72px;
+      height:72px;
+      border-radius:16px;
+      background:linear-gradient(135deg, var(--accent), #f08b3a);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:#3a2300;
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    }
+    h1{margin:0; font-size:1.6rem;}
+    .card{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:var(--pad);
+      box-shadow:0 8px 30px rgba(23,23,23,0.06);
+      line-height:1.6;
+    }
+    h2{margin-top:0.6rem;}
+    p{margin:0.6rem 0; color:var(--muted);}
+    ul{margin:0.4rem 0 0 1.1rem; color:var(--muted);}
+    footer{margin-top:16px; font-size:0.9rem; color:#6b6b6b;}
+    .meta{font-size:0.95rem; color:#3a3a3a; margin-bottom:8px;}
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Әке Хан Өмірбаяны</h1>
-        
-        <div class="section">
-            <div class="photo-placeholder">
-                [Әке Ханның суреті]
-            </div>
-            
-            <h2>Негізгі ақпарат</h2>
-            <p><strong>Толық аты:</strong> Әке Хан</p>
-            <p><strong>Туған жылы:</strong> 1424</p>
-            <p><strong>Туған жері:</strong> Қазақстан</p>
-            <p><strong>Ұлты:</strong> Қазақ</p>
-        </div>
-        
-        <div class="section">
-            <h2>Өмірбаян</h2>
-            <p>Әке Хан - біздің отбасымыздың басты тірегі, балалары мен немерелері үшін үлгі, сенім және махаббат нышаны. Оның өмір жолы қиындықтарға толы болғанымен, ол әрқашан тік тұрып, отбасына қамқорлық жасады.</p>
-            
-            <div class="timeline">
-                <div class="timeline-item">
-                    <strong>Балалық шағы</strong> - Әке Хан Қазақстанның ауылдық аймағында дүниеге келді. Балалық шағында табиғаттың құшағында өсіп, еңбекке ерте баулыған.
-                </div>
-                <div class="timeline-item">
-                    <strong>Жастық шағы</strong> - Жастық жылдарында оқып, кәсіп иеленді. Өз кәсібінде шеберлікке жетіп, көптеген жас мамандарды тәрбиелеп шығарды.
-                </div>
-                <div class="timeline-item">
-                    <strong>Отбасы құруы</strong> - Әке Хан сүйікті жарға үйленіп, бақытты отбасы құрды. Балаларын тәрбиелеуге көп күш жұмсап, олардың білім алуына мүмкіндік жасады.
-                </div>
-                <div class="timeline-item">
-                    <strong>Қазіргі кезі</strong> - Қазір Әке Хан балалары мен немерелерімен бірге өмір сүріп, олардың жетістіктерімен мақтаныш сезіп, тәжірибесімен көмектесуде.
-                </div>
-            </div>
-        </div>
-        
-        <div class="section">
-            <h2>Қадірлі қасиеттері</h2>
-            <ul>
-                <li>Өте адал және сенімді адам</li>
-                <li>Отбасына шексіз мейірімді</li>
-                <li>Еңбекқор және жауапкершілік иесі</li>
-                <li>Даналық пен тәжірибенің көзі</li>
-                <li>Жомарт жүрек иесі</li>
-            </ul>
-        </div>
-        
-        <div class="section">
-            <h2>Біздің сүйіспеншілігіміз</h2>
-            <p>Әке Хан - біз үшін тек әке ғана емес, сонымен қатар дос, жол көрсетуші және өмірдегі ең мықты тірек. Оның сабақтары мен кеңестері біздің өмір жолымызда әрқашан нұр болып тұрады.</p>
-            <p>Біз оған деген сүйіспеншілігімізді әрқашан сезіндіреміз және оның денсаулығы мен бақыты үшін тілектеспіз.</p>
-        </div>
-        
-        <footer>
-            <p>Бұл сайт Әке Ханға деген сүйіспеншілікпен жасалды</p>
-            <p>Автор:Аликаидар Нұрсұлтан</p>
-        </footer>
-    </div>
-</body>
+  <div class="wrap">
+    <header>
+      <div class="logo">КХ</div>
+      <div>
+        <h1>Керей хан — өмірбаяны</h1>
+        <div class="meta">XV ғасыр ортасы — Қазақ хандығының негізін қалаушылардың бірі</div>
+      </div>
+    </header>
 
+    <article class="card">
+      <section id="intro">
+        <h2>Кіріспе</h2>
+        <p>
+          Керей (Керей хан) — қазақ халқының қалыптасуындағы маңызды тұлға. Ол
+          Жәнібек (Жәнібек хан) деген басқа көсеммен бірге XV ғасырдың ортасында
+          Қазақ хандығын құруда жетекшілік жасаған.
+        </p>
+      </section>
+
+      <section id="early-life">
+        <h2>Бастапқы өмірі</h2>
+        <p>
+          Керей мен Жәнібек Солтүс­тік-Шығыс Түркістан мен Сырдария арнасындағы
+          саяси жағдайдан бөлек, өз тайпаларын жинап, тәуелсіздікке ұмтылған.
+          Олар Орта Азиядағы үлкен ұлыс — қазақ этностық қауымдастығын құруға
+          бастау алған көшбасшылар ретінде танымал.
+        </p>
+      </section>
+
+      <section id="rule">
+        <h2>Хандық қызметі және рөлі</h2>
+        <p>
+          Керей хан — Қазақ хандығының алғашқы хандарының бірі. Ол мен Жәнібек
+          бірігіп өзбек хандығынан бөлініп шыққан адамдарды біріктіріп, жаңа
+          мемлекет құруға үлес қосты. Керейдің билігі кезінде көшпелі қоғамның
+          дәстүрлері мен рулық-саяси құрылымдары нығая бастады.
+        </p>
+      </section>
+
+      <section id="achievements">
+        <h2>Маңызды жетістіктері</h2>
+        <ul>
+          <li>Қазақ хандығының құрылуына қатысу — ең басты мұрасы.</li>
+          <li>Рулық одақтар мен тайпаларды біріктіру арқылы тұрақты саяси негіз қалаған.</li>
+          <li>Халықаралық қатынастарда және көрші халықтармен қарым-қатынаста маңызды рөл атқарған.</li>
+        </ul>
+      </section>
+
+      <section id="legacy">
+        <h2>Мұрасы</h2>
+        <p>
+          Керей ханның және Жәнібек ханның істері қазіргі қазақ мемлекетінің тарихи
+          негізін қалады. Олардың есімдері қазақ халқының тарихында ұлықталып,
+          көптеген аңыздар мен тарихи еңбектерде сақталған.
+        </p>
+      </section>
+
+      <section id="sources">
+        <h2>Қосымша ақпарат (ұсыныс)</h2>
+        <p>
+          Бұл бет қысқаша шолу береді. Толық әрі дәл дерек үшін тарих жайлы
+          кітаптарға, ғалымдардың еңбектеріне және ұлттық музейлердің ресми
+          материалдарына жүгінуді ұсынамын.
+        </p>
+      </section>
+
+      <footer>
+        Автор: дайындалған үлгі. Бұл HTML-файлды өзіңнің GitHub репозиториіңе
+        жүктеп, атауын <code>index.html</code> қылып қойсаң — сайт жұмыс істейді.
+      </footer>
+    </article>
+  </div>
+</body>
 </html>
